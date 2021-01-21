@@ -1,0 +1,29 @@
+body{
+    background-color: blanchedalmond;
+}
+.card-container
+{
+    height: 400px;
+    width: 400px;
+    background-color: antiquewhite; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.card
+{
+    padding: 5px;
+    height: 80px;
+    width: 100px;
+    background-color: azure;    
+    margin: 0%;
+    font-family: 'Roboto'
+}
+.active:hover
+{
+    background-color: rgba(40, 167, 69, 0.125);
+    transform: scale(1.1);
+    transition-duration: 1000ms;
+    cursor: pointer;
+}
