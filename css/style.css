@@ -1,29 +1,147 @@
+
 body{
-    background-color: blanchedalmond;
+     
+    background-color: rgb(206, 203, 203);
+    overflow: scroll;
 }
 .card-container
 {
-    height: 400px;
-    width: 400px;
-    background-color: antiquewhite; 
+    height: 210px;
+    width: 540px;
+    background-color: rgb(255, 255, 255); 
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
     
 }
+.Heading
+{
+    color: grey;
+    overflow: hidden;
+    font-size: 48px;   
+    font-family: "archia";
+    src: url(../archia/archia-semibold-webfont.woff2);
+    ;
+    
+     height: auto;
+     
+}
+.graph
+{
+    height: auto;
+}
 .card
 {
     padding: 5px;
-    height: 80px;
-    width: 100px;
-    background-color: azure;    
-    margin: 0%;
-    font-family: 'Roboto'
+    height: 100%;
+    width: 25%;
+    background-color: white;    
+    margin-top: 10px;
+     
+    text-align: center;
+    border-radius: 4%;
+    
 }
-.active:hover
+.activecases:hover
 {
-    background-color: rgba(40, 167, 69, 0.125);
+    background-color: rgba(19, 86, 187, 0.6);
     transform: scale(1.1);
+    box-shadow: inset;
     transition-duration: 1000ms;
     cursor: pointer;
+    
+}
+.activecases:focus
+{
+    background-color: rgb(252, 136, 136);
+    transition-duration: 500ms;
+}
+.recovery:hover
+{
+    background-color: rgba(19, 187, 95, 0.6);
+    transform: scale(1.1);
+    box-shadow: inset;
+    transition-duration: 1000ms;
+    cursor: pointer;
+    
+}
+.confirmed:hover
+{
+    background-color: rgba(187, 19, 19, 0.6);
+    transform: scale(1.1);
+    box-shadow: inset;
+    transition-duration: 1000ms;
+    cursor: pointer;
+    
+}
+.deceased:hover
+{
+    background-color: rgba(62, 66, 73, 0.6);
+    transform: scale(1.1);
+    box-shadow: inset;
+    transition-duration: 1000ms;
+    cursor: pointer;
+    
+}
+.cardText
+{
+    
+    margin-top: 10px;
+    align-content: center;
+    justify-content: center;
+    font-size: medium;
+}
+.cardText h5{
+    font-size: 18px;
+}
+.header
+{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    padding: 1%;
+    background-color: antiquewhite;
+    margin: 0 0;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.menu
+{
+    padding-top: 10px;
+    width: 60px;
+    background-color: aliceblue;
+    height: 100%;
+    text-align: center;
+}
+.menu:hover
+{
+    background-color: lightgrey;
+    transition-duration: 1000ms;
+    cursor: pointer;
+}
+.home
+{
+    display:  flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.navbar
+{
+    height:100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px; 
+    
+}
+.navopt
+{
+    height: 20%;
+    margin: 20% auto;
+    transform: rotate(-90deg);
 }
